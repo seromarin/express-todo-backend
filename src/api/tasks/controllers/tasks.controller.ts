@@ -3,4 +3,6 @@ import path from 'path';
 
 export const router = express.Router();
 
-router.get('/', (req: Request, res: Response) => res.sendFile(path.resolve('src', 'api', 'tasks', 'mocks', 'tasks.mock.json')));
+router.get('/', (req: Request, res: Response) =>
+  res.sendFile(path.resolve('src', 'api', 'tasks', 'mocks', 'tasks.mock.json'))
+);
