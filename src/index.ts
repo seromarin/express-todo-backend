@@ -7,11 +7,12 @@ import bodyParser from 'body-parser';
 // Import controllers
 import { router as apiController } from './api';
 
-// Global Variables
-const PORT = process.env.PORT || 3001;
 
 // General configurations
 dotenv.config();
+
+// Global Variables
+const PORT = process.env.PORT || 3001;
 
 // App configuratiom
 const app: Application = express();
