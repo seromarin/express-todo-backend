@@ -1,0 +1,44 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "task": "Ordeñar las vacas",
+            "isComplete": false,
+            "owner": "Sebastian",
+            "subtasks": [
+                {
+                    "id": 11,
+                    "task": "Saludarlas",
+                    "isComplete": false,
+                    "taskOwner": 1
+                },
+                {
+                    "id": 12,
+                    "task": "Conversar",
+                    "isComplete": false,
+                    "taskOwner": 1
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "task": "Preparar quesito",
+            "isComplete": false,
+            "owner": "Sebastian",
+            "subtasks": [
+                {
+                    "id": 21,
+                    "task": "Contar la leche",
+                    "isComplete": false,
+                    "taskOwner": 1
+                },
+                {
+                    "id": 22,
+                    "task": "Operaciones especiales",
+                    "isComplete": false,
+                    "taskOwner": 1
+                }
+            ]
+        }
+    ]
+}

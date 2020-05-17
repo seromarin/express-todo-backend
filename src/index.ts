@@ -5,8 +5,7 @@ import helmet from 'helmet';
 import bodyParser from 'body-parser';
 
 // Import controllers
-import { router as apiController } from './api'
-
+import { router as apiController } from './api';
 
 // Global Variables
 const PORT = process.env.PORT || 3001;
