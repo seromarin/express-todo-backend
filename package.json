@@ -8,10 +8,13 @@
     "build": "tsc",
     "prod": "node dist/index.js",
     "dev": "nodemon",
-    "husky": {
-      "hooks": {
-        "pre-commit": "prettier --check 'src/**/*.ts'"
-      }
+    "prettier:base": "prettier --parser typescript --single-quote",
+    "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx}\"",
+    "prettier:write": "npm run prettier:base -- --write \"src/**/*.{ts,tsx}\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:write"
     }
   },
   "keywords": [],
