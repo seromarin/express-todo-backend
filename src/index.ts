@@ -18,7 +18,7 @@ const app: Application = express();
 
 app.use(compression());
 app.use(helmet());
-app.use(bodyParser.json({ type: 'application/*+json' }))
+app.use(bodyParser.json({ type: 'application/*+json' }));
 
 // Routes configuration
 app.get('/', (req: Request, res: Response) => res.send('Hello World!'));
