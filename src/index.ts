@@ -28,6 +28,7 @@ const app: Application = express();
 app.use(compression());
 app.use(helmet());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Routes configuration
 app.get('/', (req: Request, res: Response) => res.send('Hello World!'));
