@@ -4,4 +4,6 @@ const URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWOR
 
 mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
+mongoose.connection.on('connected', () => console.log('Database connected :>> '))
+
 export const mongooseConnection = mongoose.connection;
