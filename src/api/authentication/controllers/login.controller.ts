@@ -10,7 +10,7 @@ router.post('/', async (req, res, next) => {
   passport.authenticate('login', async (err, user, info) => {
     try {
       if (err || !user) {
-          // FIX ERROR RESPOSE // HANDLE ERRORS
+        // FIX ERROR RESPOSE // HANDLE ERRORS
         const error = new Error('An Error occurred');
         return next(error);
       }
