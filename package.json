@@ -43,6 +43,7 @@
     "@types/node": "^14.0.1",
     "@types/passport": "^1.0.3",
     "@types/passport-http-bearer": "^1.0.35",
+    "@types/passport-jwt": "^3.0.3",
     "@types/passport-local": "^1.0.33",
     "husky": "^4.2.5",
     "nodemon": "^2.0.4",
