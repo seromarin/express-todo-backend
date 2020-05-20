@@ -3,7 +3,8 @@ import dotenv from 'dotenv';
 import compression from 'compression';
 import helmet from 'helmet';
 import passport from 'passport';
-import jwt from 'jsonwebtoken';
+import cors from 'cors';
+// import jwt from 'jsonwebtoken';
 
 // General configurations
 dotenv.config();
@@ -30,9 +31,14 @@ app.use(compression());
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors())
 
 // Routes configuration
 app.get('/', (req: Request, res: Response) => res.send('Hello World!'));
+app.post('/', (req: Request, res: Response) => {
+  console.log('req.body', req.body)
+  return res.json(req.body);
+})
 app.use('/api', apiController);
 
 // app.post(
